@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 60" role="img" aria-labelledby="title desc">
+  <title id="title">Logo tipografico AMLI</title>
+  <desc id="desc">Monogramma AMLI con forme geometriche</desc>
+  <rect width="160" height="60" rx="18" fill="#0b6fa4" />
+  <g fill="#ffffff">
+    <path d="M28 44 16 16h6l4 10 4-10h6l-12 28z" />
+    <path d="M54 44V16h6v28h-6z" />
+    <path d="M70 16h6l12 28h-6l-2.4-6H66.4l-2.4 6h-6l12-28zm5.2 16-3.6-9-3.6 9h7.2z" />
+    <path d="M104 44V16h6v22h12v6h-18z" />
+  </g>
+</svg>

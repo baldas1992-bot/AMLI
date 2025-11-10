@@ -4,9 +4,9 @@ Starter statico (HTML/CSS/JS) pronto per GitHub Pages.
 
 ## Struttura
 - `index.html`: landing page con sezioni Servizi, Chi sono, Contatti
-- `css/styles.css`: stile responsive
+- `css/styles.css`: stile responsive con palette e componenti riutilizzabili
 - `js/main.js`: script per menu e footer
-- `assets/logos/`: varianti logo fornite
+- `assets/logos/`: varianti logo in formato SVG
 
 ## Pubblicazione su GitHub
 
@@ -25,7 +25,7 @@ Starter statico (HTML/CSS/JS) pronto per GitHub Pages.
 ## Personalizzazioni rapide
 - In `index.html` sostituisci l'attributo `action` del form con la tua email o integra un servizio (es. Formspree).
 - Aggiorna i contenuti testuali (servizi, bio, contatti).
-- Per favicon, sostituisci `assets/logos/log-01.png` con l'icona preferita.
+- Per favicon, sostituisci `assets/logos/log-02.svg` con l'icona preferita.
 
 ## Prossimi step suggeriti
 1. Pagine dedicate: `servizi.html`, `privacy.html`, `cookie.html`.
