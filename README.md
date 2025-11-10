@@ -8,6 +8,12 @@ Starter statico (HTML/CSS/JS) pronto per GitHub Pages.
 - `js/main.js`: script per menu e footer
 - `assets/logos/`: varianti logo in formato SVG
 
+## Aggiornare i loghi
+- Posiziona i file forniti (es. `logo-primario.svg`, `logo-simbolo.svg`) nella cartella `assets/logos/`.
+- Mantieni gli stessi nomi usati nel markup (`log-01.svg`, `log-02.svg`, `log-04.svg`) oppure aggiorna gli attributi `src`/`href` nei file HTML alla variante corretta.
+- Per la favicon e per l'immagine di anteprima social modifica rispettivamente `link rel="icon"` e `meta property="og:image"` presenti in ogni pagina.
+- Verifica il risultato aprendo le pagine in locale o tramite l'anteprima di GitHub Pages per assicurarti che tutti i riferimenti puntino ai nuovi file.
+
 ## Pubblicazione su GitHub
 
 **Opzione A – Repository dedicato Pages**
