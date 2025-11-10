@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title desc">
+  <title id="title">Icona tonda AMLI</title>
+  <desc id="desc">Serpente che avvolge un bastone con sfondo circolare</desc>
+  <defs>
+    <radialGradient id="orb" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0%" stop-color="#e3f2ff" />
+      <stop offset="100%" stop-color="#0b6fa4" />
+    </radialGradient>
+  </defs>
+  <circle cx="60" cy="60" r="54" fill="url(#orb)" />
+  <path
+    d="M60 26c-8 0-14 6.5-14 14.5S52 55 60 55s14 6.5 14 14.5S68 84 60 84"
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="7"
+    stroke-linecap="round"
+  />
+  <path d="M60 24v72" stroke="#ffffff" stroke-width="7" stroke-linecap="round" />
+</svg>
