@@ -32,3 +32,13 @@ Starter statico (HTML/CSS/JS) pronto per GitHub Pages.
 2. Modulo contatti con backend/servizio.
 3. SEO base (title/description per pagina, OpenGraph).
 4. Tracciamento consenso cookie (GDPR) se necessario.
+
+
+## Contatti del sito
+- Email: medicoinac@cia.it
+- Cellulare: +39 351 373 3210
+
+## Sitemap / Robots
+Se usi un **project page** (es. `amli-site`), aggiorna gli URL in `sitemap.xml` e `robots.txt` a:
+`https://baldas1992-bot.github.io/amli-site/`.
+Se usi un **user page** (repo `baldas1992-bot.github.io`), lasciali come `https://baldas1992-bot.github.io/`.
