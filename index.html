@@ -1,130 +1,260 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Assistenza Medico Legale Integrata – Dr. Simone</title>
-  <meta name="description" content="Consulenze di medicina legale: INAIL, INPS, responsabilità sanitaria, perizie e certificazioni.">
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel='icon' type='image/png' href='assets/logos/log-01.png'/>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Assistenza Medico Legale Integrata – Dr. Simone</title>
+    <meta
+      name="description"
+      content="Consulenze di medicina legale: INAIL, INPS, responsabilità sanitaria, perizie e certificazioni."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/svg+xml" href="assets/logos/log-02.svg" />
 
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "Assistenza Medico Legale Integrata", "url": "https://baldas1992-bot.github.io/", "email": "medicoinac@cia.it", "telephone": "+39 351 373 3210", "areaServed": "IT", "medicalSpecialty": "LegalMedicine", "image": "assets/logos/log-01.png"}</script>
-</head>
-<body>
-  <header class="site-header">
-    <nav class="container nav">
-      <a class="brand" href="#home">
-        <img src="assets/logos/log-01.png" alt="Logo AMLI" height="40"/>
-      </a>
-      <button class="nav-toggle" aria-expanded="false" aria-label="Apri menu" onclick="toggleMenu()">☰</button>
-      <ul id="menu" class="menu">
-        <li><a href="servizi.html">Servizi</a></li>
-        <li><a href="#chi-sono">Chi sono</a></li>
-        <li><a href="#contatti">Contatti</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main id="home">
-    <section class="hero container">
-      <div class="hero-text">
-        <h1>Assistenza Medico&nbsp;Legale Integrata</h1>
-        <p>Valutazioni tecniche accurate, documenti chiari e strategie pratiche per tutelare i tuoi diritti.</p>
-        <div class="cta-row">
-          <a class="btn primary" href="#contatti">Prenota una consulenza</a>
-          <a class="btn outline" href="#servizi">Vedi i servizi</a>
-        </div>
-      </div>
-      <div class="hero-art">
-        <img src='assets/logos/log-02.png' alt='Simbolo staff & serpente'/>
-      </div>
-    </section>
-
-    <section class="container" id="servizi">
-      <h2>Servizi principali</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>INAIL</h3>
-          <p>Denunce di malattia professionale e infortuni, opposizioni e aggravamenti, stima del danno biologico.</p>
-        </article>
-        <article class="card">
-          <h3>INPS</h3>
-          <p>Invalidità civile, handicap L.104/92, accompagnamento, ricorsi amministrativi e giudiziali.</p>
-        </article>
-        <article class="card">
-          <h3>Responsabilità sanitaria</h3>
-          <p>Pareri tecnici preliminari, analisi documentale, consulenze di parte (CTP) e supporto al legale.</p>
-        </article>
-        <article class="card">
-          <h3>Perizie & certificazioni</h3>
-          <p>Relazioni medico-legali, quantificazione postumi, certificazioni per assicurazioni private.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="container about" id="chi-sono">
-      <div class="about-grid">
-        <div>
-          <h2>Chi sono</h2>
-          <p>Medico-legale con esperienza in valutazioni <abbr title="Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro">INAIL</abbr> e
-          <abbr title="Istituto Nazionale della Previdenza Sociale">INPS</abbr>, con approccio pragmatico e documenti pensati per essere usati in sede amministrativa e giudiziaria.</p>
-          <ul class="ticks">
-            <li>Relazioni chiare e verificabili</li>
-            <li>Uso di linee guida e riferimenti normativi</li>
-            <li>Comunicazione rapida con patronati e legali</li>
-          </ul>
-        </div>
-        <div class="logo-column">
-          <img src='assets/logos/log-01.png' alt='Logo variante' /><img src='assets/logos/log-02.png' alt='Logo variante' /><img src='assets/logos/log-04.png' alt='Logo variante' />
-        </div>
-      </div>
-    </section>
-
-    <section class="container contact" id="contatti">
-      <h2>Contatti</h2>
-      <div class="card" id="contatti-rapidi"><p><strong>Email:</strong> <a href="mailto:medicoinac@cia.it">medicoinac@cia.it</a> &nbsp;•&nbsp; <strong>Cellulare:</strong> <a href="tel:+393513733210">+39 351 373 3210</a> &nbsp;•&nbsp; <strong>WhatsApp:</strong> <a href="https://wa.me/+393513733210" target="_blank" rel="noopener">Apri chat</a></p></div>
-      <p>Compila il modulo: riceverai risposta entro 1 giorno lavorativo.</p>
-      <form class="contact-form" action="mailto:medicoinac@cia.it" method="post" enctype="text/plain">
-        <div class="grid">
-          <label>Nome e Cognome
-            <input type="text" name="nome" required />
-          </label>
-          <label>Email
-            <input type="email" name="email" required />
-          </label>
-          <label>Telefono
-            <input type="tel" name="telefono" />
-          </label>
-          <label>Oggetto
-            <input type="text" name="oggetto" />
-          </label>
-        </div>
-        <label>Messaggio
-          <textarea name="messaggio" rows="6" placeholder="Descrivi il tuo caso in breve"></textarea>
-        </label>
-        <label class="policy">
-          <input type="checkbox" required />
-          Ho letto e accetto l'informativa privacy.
-        </label>
-        <button class="btn primary" type="submit">Invia richiesta</button>
-      </form>
-      <p class="small">Preferisci WhatsApp o telefono? Indicalo nel messaggio.</p>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <img src="assets/logos/log-01.png" alt="Logo AMLI" height="32"/>
-        <p>© <span id="year"></span> Assistenza Medico Legale Integrata</p>
-      </div>
-      <nav class="footer-nav">
-        <a href="privacy.html">Privacy</a>
-        <a href="cookie.html">Cookie</a>
-        <a href="#contatti">Contatti</a>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalClinic",
+        "name": "Assistenza Medico Legale Integrata",
+        "url": "https://baldas1992-bot.github.io/",
+        "email": "medicoinac@cia.it",
+        "telephone": "+39 351 373 3210",
+        "areaServed": "IT",
+        "medicalSpecialty": "LegalMedicine",
+        "image": "assets/logos/log-01.svg"
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container nav">
+        <a class="brand" href="#home">
+          <img src="assets/logos/log-01.svg" alt="Logo AMLI" height="40" />
+        </a>
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-label="Apri menu"
+          onclick="toggleMenu()"
+        >
+          ☰
+        </button>
+        <ul id="menu" class="menu">
+          <li><a href="servizi.html">Servizi</a></li>
+          <li><a href="#metodo">Metodo</a></li>
+          <li><a href="#chi-sono">Chi sono</a></li>
+          <li><a href="#contatti">Contatti</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="cookie.html">Cookie</a></li>
+        </ul>
       </nav>
-    </div>
-  </footer>
-  <script src="js/main.js"></script>
-</body>
+    </header>
+
+    <main id="home">
+      <section class="hero container">
+        <div class="hero-text">
+          <p class="eyebrow">Consulenza medico-legale</p>
+          <h1>Assistenza Medico&nbsp;Legale Integrata</h1>
+          <p>
+            Valutazioni tecniche accurate, documenti chiari e strategie pratiche
+            per tutelare i tuoi diritti.
+          </p>
+          <div class="cta-row">
+            <a class="btn primary" href="#contatti">Prenota una consulenza</a>
+            <a class="btn outline" href="#servizi">Vedi i servizi</a>
+          </div>
+        </div>
+        <div class="hero-art">
+          <img src="assets/logos/log-02.svg" alt="Simbolo staff & serpente" />
+        </div>
+      </section>
+
+      <section class="container" id="servizi">
+        <h2>Servizi principali</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>INAIL</h3>
+            <p>
+              Denunce di malattia professionale e infortuni, opposizioni e
+              aggravamenti, stima del danno biologico.
+            </p>
+          </article>
+          <article class="card">
+            <h3>INPS</h3>
+            <p>
+              Invalidità civile, handicap L.104/92, accompagnamento, ricorsi
+              amministrativi e giudiziali.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Responsabilità sanitaria</h3>
+            <p>
+              Pareri tecnici preliminari, analisi documentale, consulenze di
+              parte (CTP) e supporto al legale.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Perizie & certificazioni</h3>
+            <p>
+              Relazioni medico-legali, quantificazione postumi, certificazioni
+              per assicurazioni private.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="container about" id="chi-sono">
+        <div class="about-grid">
+          <div>
+            <h2>Chi sono</h2>
+            <p>
+              Medico-legale con esperienza in valutazioni
+              <abbr
+                title="Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"
+                >INAIL</abbr
+              >
+              e
+              <abbr title="Istituto Nazionale della Previdenza Sociale"
+                >INPS</abbr
+              >, con approccio pragmatico e documenti pensati per essere usati
+              in sede amministrativa e giudiziaria.
+            </p>
+            <ul class="ticks">
+              <li>Relazioni chiare e verificabili</li>
+              <li>Uso di linee guida e riferimenti normativi</li>
+              <li>Comunicazione rapida con patronati e legali</li>
+            </ul>
+          </div>
+          <div class="logo-column">
+            <img src="assets/logos/log-01.svg" alt="Logo variante" /><img
+              src="assets/logos/log-02.svg"
+              alt="Logo variante"
+            /><img src="assets/logos/log-04.svg" alt="Logo variante" />
+          </div>
+        </div>
+      </section>
+
+      <section class="band" id="metodo">
+        <div class="container band-grid">
+          <div>
+            <h2>Metodo strutturato, risultati concreti</h2>
+            <p>
+              Ogni incarico segue uno schema chiaro: analisi preliminare,
+              raccolta degli elementi probatori, redazione della relazione e
+              confronto con il tuo consulente legale. Questo ti consente di
+              sapere sempre a che punto è la pratica.
+            </p>
+          </div>
+          <ol class="steps">
+            <li>
+              <span>01</span>
+              <strong>Analisi documentale</strong>
+              <small
+                >Studio della cartella clinica e dei precedenti atti.</small
+              >
+            </li>
+            <li>
+              <span>02</span>
+              <strong>Strategia condivisa</strong>
+              <small
+                >Definizione dell'obiettivo insieme a legali e patronati.</small
+              >
+            </li>
+            <li>
+              <span>03</span>
+              <strong>Relazione finale</strong>
+              <small
+                >Documenti chiari, pronti per sede amministrativa o
+                giudiziale.</small
+              >
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="container contact" id="contatti">
+        <h2>Contatti</h2>
+        <div class="card" id="contatti-rapidi">
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:medicoinac@cia.it">medicoinac@cia.it</a>
+            &nbsp;•&nbsp; <strong>Cellulare:</strong>
+            <a href="tel:+393513733210">+39 351 373 3210</a> &nbsp;•&nbsp;
+            <strong>WhatsApp:</strong>
+            <a href="https://wa.me/+393513733210" target="_blank" rel="noopener"
+              >Apri chat</a
+            >
+          </p>
+        </div>
+        <p>Compila il modulo: riceverai risposta entro 1 giorno lavorativo.</p>
+        <form
+          class="contact-form"
+          action="mailto:medicoinac@cia.it"
+          method="post"
+          enctype="text/plain"
+        >
+          <div class="grid">
+            <label
+              >Nome e Cognome
+              <input type="text" name="nome" required />
+            </label>
+            <label
+              >Email
+              <input type="email" name="email" required />
+            </label>
+            <label
+              >Telefono
+              <input type="tel" name="telefono" />
+            </label>
+            <label
+              >Oggetto
+              <input type="text" name="oggetto" />
+            </label>
+          </div>
+          <label
+            >Messaggio
+            <textarea
+              name="messaggio"
+              rows="6"
+              placeholder="Descrivi il tuo caso in breve"
+            ></textarea>
+          </label>
+          <label class="policy">
+            <input type="checkbox" required />
+            Ho letto e accetto l'informativa privacy.
+          </label>
+          <button class="btn primary" type="submit">Invia richiesta</button>
+        </form>
+        <p class="small">
+          Preferisci WhatsApp o telefono? Indicalo nel messaggio.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <img src="assets/logos/log-01.svg" alt="Logo AMLI" height="32" />
+          <p>© <span id="year"></span> Assistenza Medico Legale Integrata</p>
+        </div>
+        <nav class="footer-nav">
+          <a href="privacy.html">Privacy</a>
+          <a href="cookie.html">Cookie</a>
+          <a href="#contatti">Contatti</a>
+        </nav>
+        <div class="footer-contact">
+          <a href="mailto:medicoinac@cia.it">medicoinac@cia.it</a>
+          <span aria-hidden="true">•</span>
+          <a href="tel:+393513733210">+39 351 373 3210</a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
 </html>
