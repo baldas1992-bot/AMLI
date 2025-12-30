@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calcolatori INAIL – Assistenza Medico Legale Integrata</title>
+    <meta
+      name="description"
+      content="Calcola rendite INAIL e indennizzi per danno biologico con formule trasparenti e arrotondamenti al centesimo."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/svg+xml" href="assets/logos/log-02.svg" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Calcolatori INAIL – Assistenza Medico Legale Integrata"
+    />
+    <meta
+      property="og:description"
+      content="Strumenti per il calcolo di rendite e danno biologico INAIL aggiornabili con i valori tabellari ufficiali."
+    />
+    <meta property="og:image" content="assets/logos/log-01.svg" />
+  </head>
+  <body>
+    <div class="info-bar">
+      <div class="container info-bar__inner">
+        <span class="info-bar__tag">Studio AMLI</span>
+        <a href="mailto:medicoinac@cia.it">medicoinac@cia.it</a>
+        <span aria-hidden="true" class="info-bar__separator">•</span>
+        <a href="tel:+393513733210">+39 351 373 3210</a>
+        <span aria-hidden="true" class="info-bar__separator">•</span>
+        <a class="info-bar__cta" href="index.html#contatti"
+          >Prenota una consulenza</a
+        >
+      </div>
+    </div>
+    <header class="site-header">
+      <nav class="container nav">
+        <a class="brand" href="index.html"
+          ><img src="assets/logos/log-01.svg" alt="Logo AMLI" height="40"
+        /></a>
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-label="Apri menu"
+          onclick="toggleMenu()"
+        >
+          ☰
+        </button>
+        <ul id="menu" class="menu">
+          <li><a href="servizi.html">Servizi</a></li>
+          <li><a href="calcolatori.html" aria-current="page">Calcolatori</a></li>
+          <li><a href="index.html#perche">Perché AMLI</a></li>
+          <li><a href="index.html#metodo">Metodo</a></li>
+          <li><a href="index.html#testimonianze">Testimonianze</a></li>
+          <li><a href="index.html#contatti">Contatti</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="cookie.html">Cookie</a></li>
+          <li class="menu-cta">
+            <a class="nav-btn" href="index.html#contatti">Prenota</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container page calculators">
+      <section class="page-hero">
+        <p class="eyebrow">Strumenti di calcolo</p>
+        <h1>Calcolatori INAIL</h1>
+        <p class="small">
+          Compila i campi con i valori tabellari ufficiali per ottenere rendite
+          e indennizzi con arrotondamenti al centesimo. I calcoli avvengono
+          esclusivamente sul tuo dispositivo.
+        </p>
+        <div class="callout">
+          <p>
+            Inserisci sempre i dati aggiornati (retribuzione annua, coefficienti
+            patrimoniali e valore economico del punto) dalle tabelle INAIL
+            vigenti. Il risultato restituito è immediato e non viene salvato.
+          </p>
+        </div>
+      </section>
+
+      <section class="calc-card" id="rendita-inail">
+        <div class="calc-card__header">
+          <div>
+            <p class="eyebrow">Menomazioni ≥ 16%</p>
+            <h2>Calcolo rendita INAIL</h2>
+            <p class="small">
+              Suddivisione in quota biologica e patrimoniale con rivalutazione
+              percentuale opzionale. Puoi personalizzare i coefficienti per
+              aderire alla normativa applicabile.
+            </p>
+          </div>
+          <div class="calc-card__badge">Rendita</div>
+        </div>
+        <form class="calc-form" id="rendita-form">
+          <div class="form-grid">
+            <label class="form-field">
+              <span>Retribuzione annua assicurata (€)</span>
+              <input
+                type="number"
+                name="retribuzione"
+                min="0"
+                step="0.01"
+                inputmode="decimal"
+                placeholder="Es. 32000"
+                required
+              />
+            </label>
+            <label class="form-field">
+              <span>Grado di menomazione (%)</span>
+              <input
+                type="number"
+                name="grado"
+                min="0"
+                max="100"
+                step="0.01"
+                inputmode="decimal"
+                placeholder="Es. 35"
+                required
+              />
+            </label>
+            <label class="form-field">
+              <span>Quota biologica da applicare (%)</span>
+              <input
+                type="number"
+                name="quotaBiologica"
+                min="0"
+                max="100"
+                step="0.01"
+                inputmode="decimal"
+                value="40"
+              />
+              <small>Imposta la percentuale prevista dalle tabelle rendita.</small>
+            </label>
+            <label class="form-field">
+              <span>Quota patrimoniale (%)</span>
+              <input
+                type="number"
+                name="quotaPatrimoniale"
+                min="0"
+                max="100"
+                step="0.01"
+                inputmode="decimal"
+                value="60"
+              />
+              <small>Percentuale prevista per la componente patrimoniale.</small>
+            </label>
+            <label class="form-field">
+              <span>Coefficiente patrimoniale (moltiplicatore)</span>
+              <input
+                type="number"
+                name="coeffPatrimoniale"
+                min="0"
+                step="0.0001"
+                inputmode="decimal"
+                value="1"
+              />
+              <small>Usa i coefficienti ufficiali per reddito/menomazione.</small>
+            </label>
+            <label class="form-field">
+              <span>Rivalutazione ISTAT (%)</span>
+              <input
+                type="number"
+                name="rivalutazione"
+                min="0"
+                step="0.01"
+                inputmode="decimal"
+                value="0"
+              />
+              <small>Facoltativa, applicata al totale annuo.</small>
+            </label>
+          </div>
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Calcola rendita</button>
+            <button class="btn outline" type="reset">Pulisci campi</button>
+          </div>
+        </form>
+        <div class="calc-results" aria-live="polite" id="rendita-results">
+          <div class="result">
+            <p class="result__label">Rendita annua</p>
+            <p class="result__value" data-result="rendita-annua">€ 0,00</p>
+          </div>
+          <div class="result">
+            <p class="result__label">Rendita mensile</p>
+            <p class="result__value" data-result="rendita-mensile">€ 0,00</p>
+          </div>
+          <div class="result">
+            <p class="result__label">Quota biologica annua</p>
+            <p class="result__value" data-result="quota-biologica">€ 0,00</p>
+          </div>
+          <div class="result">
+            <p class="result__label">Quota patrimoniale annua</p>
+            <p class="result__value" data-result="quota-patrimoniale">€ 0,00</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="calc-card" id="danno-biologico">
+        <div class="calc-card__header">
+          <div>
+            <p class="eyebrow">Indennizzo in capitale 6–15%</p>
+            <h2>Calcolo danno biologico INAIL</h2>
+            <p class="small">
+              Inserisci il valore economico del punto relativo all’età e la
+              rivalutazione vigente. Il calcolo è moltiplicato per il grado di
+              menomazione impostato.
+            </p>
+          </div>
+          <div class="calc-card__badge">Danno biologico</div>
+        </div>
+        <form class="calc-form" id="danno-form">
+          <div class="form-grid">
+            <label class="form-field">
+              <span>Età assicurato/a (anni)</span>
+              <input
+                type="number"
+                name="eta"
+                min="14"
+                max="80"
+                step="1"
+                inputmode="numeric"
+                placeholder="Es. 45"
+                required
+              />
+            </label>
+            <label class="form-field">
+              <span>Grado di menomazione (%)</span>
+              <input
+                type="number"
+                name="grado"
+                min="6"
+                max="15"
+                step="0.01"
+                inputmode="decimal"
+                placeholder="Es. 11"
+                required
+              />
+            </label>
+            <label class="form-field">
+              <span>Valore economico del punto (€)</span>
+              <input
+                type="number"
+                name="valorePunto"
+                min="0"
+                step="0.01"
+                inputmode="decimal"
+                placeholder="Valore da tabella per l’età"
+                required
+              />
+              <small>Riporta il valore tabellare ufficiale all’età indicata.</small>
+            </label>
+            <label class="form-field">
+              <span>Coefficiente età/tabellare</span>
+              <input
+                type="number"
+                name="coeffEta"
+                min="0"
+                step="0.0001"
+                inputmode="decimal"
+                value="1"
+              />
+              <small>Moltiplicatore del valore punto (es. fattore correttivo).</small>
+            </label>
+            <label class="form-field">
+              <span>Rivalutazione (%)</span>
+              <input
+                type="number"
+                name="rivalutazione"
+                min="0"
+                step="0.01"
+                inputmode="decimal"
+                value="0"
+              />
+              <small>Inserisci l’aggiornamento annuale ISTAT, se previsto.</small>
+            </label>
+          </div>
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Calcola indennizzo</button>
+            <button class="btn outline" type="reset">Pulisci campi</button>
+          </div>
+        </form>
+        <div class="calc-results" aria-live="polite" id="danno-results">
+          <div class="result">
+            <p class="result__label">Indennizzo complessivo</p>
+            <p class="result__value" data-result="danno-totale">€ 0,00</p>
+          </div>
+          <div class="result">
+            <p class="result__label">Valore per punto applicato</p>
+            <p class="result__value" data-result="danno-punto">€ 0,00</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <img src="assets/logos/log-01.svg" alt="Logo AMLI" height="32" />
+          <p>
+            © <span id="year">2025</span> Assistenza Medico Legale Integrata
+          </p>
+        </div>
+        <nav class="footer-nav">
+          <a href="privacy.html">Privacy</a>
+          <a href="cookie.html">Cookie</a>
+          <a href="index.html#contatti">Contatti</a>
+        </nav>
+        <div class="footer-contact">
+          <a href="mailto:medicoinac@cia.it">medicoinac@cia.it</a>
+          <span aria-hidden="true">•</span>
+          <a href="tel:+393513733210">+39 351 373 3210</a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/calculators.js"></script>
+  </body>
+</html>
